@@ -107,6 +107,32 @@ class options():
                 2.1637070295754972e+02,
                 2.5722952612437177e+02
             ]
+        if systemName == 'pa6x20':
+            self.delta = 720 * 9
+            self.fname = ('/media/anton/Seagate Expansion Drive/Article-MMT/' +
+                          'Cluster calculations for article/BiggerSystems/' +                         'PA6x20/1930764/co.7500000.data')
+            self.polymer_len = 382
+            self.polymer_chains = 144
+            self.chains_per_cell = 144
+            self.systemsize = 55008
+            self.masses = [
+                1.00797,
+                12.0112,
+                1.00797,
+                12.0112,
+                15.9994,
+                14.0067,
+                14.0067,
+                12.0112
+            ]
+            self.bounds = [
+                1.3226992600000000e+00,
+                8.5752099259999994e+01,
+                1.0452857058545163e+01,
+                8.6111077616706069e+01,
+                -3.9074032933933722e+00,
+                8.7932663426553233e+01
+            ]
 #--------------------------------
         if systemName == 'mixed':
             self.delta = 1560

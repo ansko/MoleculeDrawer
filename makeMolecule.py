@@ -10,9 +10,10 @@ def make_chain(atoms, bounds, MoleculeNumber=0, o=None):
     ly = bounds[3] - bounds[2]
     lz = bounds[5] - bounds[4]
 
-    startatom_number = ((MoleculeNumber // o.chains_per_cell) * o.systemsize + 
-                        o.delta + 
-                        (MoleculeNumber % o.chains_per_cell) * o.polymer_len)
+#    startatom_number = ((MoleculeNumber // o.chains_per_cell) * o.systemsize + 
+#                        o.delta + 
+#                        (MoleculeNumber % o.chains_per_cell) * o.polymer_len)
+    startatom_number = (MoleculeNumber % o.chains_per_cell) * o.polymer_len
     start_x = atoms[startatom_number][4]
     start_y = atoms[startatom_number][5]
     start_z = atoms[startatom_number][6]

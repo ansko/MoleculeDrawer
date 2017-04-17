@@ -18,7 +18,7 @@ from computeRgyr import computeRgyr
 from options import options
 
 def main():
-    o = options('poly65856')
+    o = options('pa6x20')
     fname = o.fname
     size_vs_z = [[0, 0, 0, 0] for i  in range(15)]
 
